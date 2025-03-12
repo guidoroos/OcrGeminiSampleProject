@@ -5,7 +5,7 @@ import com.google.ai.client.generativeai.GenerativeModel
 import com.guidoroos.ocrgeminisample.model.UIFullRecipe
 import com.guidoroos.ocrgeminisample.util.ResultOf
 import com.guidoroos.ocrgeminisample.BuildConfig
-import com.guidoroos.ocrgeminisample.ui.ocr.geminiPrompt
+import com.guidoroos.ocrgeminisample.util.geminiPrompt
 import com.guidoroos.ocrgeminisample.R
 import com.guidoroos.ocrgeminisample.model.OcrRecipe
 import com.guidoroos.ocrgeminisample.model.UIIngredient

@@ -1,4 +1,4 @@
-package com.guidoroos.ocrgeminisample.ui.ocr
+package com.guidoroos.ocrgeminisample.util
 
 
 fun geminiPrompt(scan: String) = """

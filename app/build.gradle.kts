@@ -7,9 +7,9 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
-val apikeyPropertiesFile = rootProject.file("apiKey.properties")
-val apikeyProperties = Properties()
-apikeyProperties.load(FileInputStream(apikeyPropertiesFile))
+val localProperties = Properties().apply {
+    load(FileInputStream(rootProject.file("local.properties")))
+}
 
 android {
     namespace = "com.guidoroos.ocrgeminisample"
@@ -23,7 +23,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "AI_KEY", (apikeyProperties["googleAiKey"] as? String) ?: "")
+        buildConfigField("String", "AI_KEY", (localProperties["googleAiKey"] as? String) ?: "")
     }
 
     buildTypes {

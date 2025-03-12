@@ -33,7 +33,7 @@ import com.guidoroos.ocrgeminisample.ui.components.AlertType
 import com.guidoroos.ocrgeminisample.ui.components.CustomAlertDialog
 import com.guidoroos.ocrgeminisample.ui.components.LoadingDialog
 import com.guidoroos.ocrgeminisample.ui.components.LoadingIndicator
-import com.guidoroos.ocrgeminisample.ui.ocr.CameraPreviewScreen
+import com.guidoroos.ocrgeminisample.ui.ocr.CameraPreview
 import com.guidoroos.ocrgeminisample.ui.recipe.RecipeViewModel
 import com.guidoroos.ocrgeminisample.ui.theme.LocalColors
 import com.guidoroos.ocrgeminisample.ui.theme.LocalDimens
@@ -119,7 +119,7 @@ fun OcrCaptureScreen(
 
 
                 Box {
-                    CameraPreviewScreen(
+                    CameraPreview(
                         isLoading = textState.value is ResultOf.Loading || saveState.value is ResultOf.Loading
                     ) { image ->
                         viewModel.extractTextFromImage(image)

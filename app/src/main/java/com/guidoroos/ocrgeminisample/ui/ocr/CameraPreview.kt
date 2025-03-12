@@ -37,7 +37,7 @@ import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
 @Composable
-fun CameraPreviewScreen(
+fun CameraPreview(
     isLoading: Boolean,
     onCaptureImage: (InputImage?) -> Unit
 

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">OcrGeminiSample</string>
+    <string name="loading_message_gemini">Processing input into recipe data, this can take up to 30 seconds</string>
+    <string name="steps">Steps</string>
+    <string name="steps_empty_state">No steps found</string>
+    <string name="ingredients">Ingredients\n</string>
+    <string name="ingredients_empty_state">No ingredients found</string>
+    <string name="capture_image">Capture image</string>
+    <string name="overview">Overview</string>
+    <string name="ingredients_short">Ingr.</string>
+    <string name="no_recipe_found">No Recipe found</string>
+    <string name="ocr_processing_failed">Failed to process scanned text</string>
+    <string name="error_ocr_text_extraction_failed">Could not extract text from image</string>
+    <string name="error_message_image_not_found">No image found</string>
+    <string name="camera_denied_title">Camera permission needed for this functionality</string>
+    <string name="camera_denied_message">Please give permission for camera usage</string>
+    <string name="ok">OK</string>
+    <string name="error_title">Could not extract recipe from image</string>
+    <string name="ocr_confirmation_title">Text recognition successful</string>
+    <string name="ocr_confirmation_message">Please choose one of two options:</string>
+    <string name="ocr_process_output">Process output</string>
+    <string name="ocr_capture_more_text"> Capture more text</string>
+    <string name="hours_short">hrs\n</string>
+    <string name="minutes_short">min</string>
+    <string name="gemini_serialization_exception">Serialization error occurred in AI model.</string>
+    <string name="gson_serialization_exception">Extracted recipe does not match app recipe format </string>
+    <string name="gemini_server_exception">Server error occurred in AI model.</string>
+    <string name="gemini_invalid_api_key_exception">Invalid API key error occurred in AI model.</string>
+    <string name="gemini_prompt_blocked_exception">Prompt blocked error occurred in AI model.</string>
+    <string name="gemini_unsupported_user_location_exception">Unsupported user location error occurred in AI model.</string>
+    <string name="gemini_invalid_state_exception">Invalid state error occurred in AI model.</string>
+    <string name="gemini_response_stopped_exception">Response stopped error occurred in AI model.</string>
+    <string name="gemini_request_timeout_exception">Request timeout error occurred in AI model.</string>
+    <string name="gemini_unknown_exception">Unknown error occurred in AI model.</string>
+    <string name="gemini_quota_exceeded_exception">Quota exceeded error occurred in AI model.</string>
+    <string name="error_empty_ocr_text">No content for AI model to process</string>
+    <string name="error_not_a_recipe">Text scanned for image is not recognized as a recipe</string>
+    <string name="loading">Loading</string>
+
+    <plurals name="hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <plurals name="secondsNoDigit">
+        <item quantity="one">second</item>
+        <item quantity="other">seconds</item>
+    </plurals>
+    <plurals name="steps">
+        <item quantity="one">%d step</item>
+        <item quantity="other">%d steps</item>
+    </plurals>
+    <plurals name="categories">
+        <item quantity="one">%d category</item>
+        <item quantity="other">%d categories</item>
+    </plurals>
+</resources>
